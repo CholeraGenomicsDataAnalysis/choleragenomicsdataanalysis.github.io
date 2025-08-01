@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Load shared head.html content -->
-  <script>
-    fetch('head.html')
-      .then(response => response.text())
-      .then(data => {
-        document.head.innerHTML += data;
-      })
-      .catch(error => console.error('Error loading head:', error));
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cholera Genomics Data Analysis Working Group</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <!-- Placeholder where header.html will be inserted -->
+  <!-- Header Section -->
   <div id="navbar-placeholder"></div>
-
-  <!-- JavaScript should go AFTER the placeholder so it can find it -->
   <script>
     fetch('header.html')
       .then(response => response.text())
@@ -24,293 +18,175 @@
       })
       .catch(error => console.error('Error loading header:', error));
   </script>
-    <!-- main Page -->
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">AI for Public Health at Daffodil International University</h1>
-                <p class="hero-subtitle">Transforming healthcare through artificial intelligence and data science</p>
-                <p class="hero-description">Join our comprehensive course to learn how AI technologies are revolutionizing public health research, policy, and practice.</p>
-                <div class="hero-buttons">
-                    <a href="overview.html" class="btn btn-primary">Learn More</a>
-                    <a href="schedule.html" class="btn btn-secondary">View Schedule</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="hero-graphic">
-                    <i class="fas fa-heartbeat"></i>
-                    <i class="fas fa-chart-line"></i>
-                    <i class="fas fa-microscope"></i>
-                    <i class="fas fa-globe"></i>
-                </div>
-            </div>
-        </section>
-     <!-- Course Highlights Section -->
-        <section class="features">
-            <div class="container">
-                <h2 class="section-title">Course Highlights</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <h3>Python for Data Science</h3>
-                        <p>Learn python for health data analysis and predictive modeling.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Machine Learning</h3>
-                        <p>Learn advanced ML techniques for health data analysis and predictive modeling.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Deep Learning</h3>
-                        <p>Learn advanced DL techniques for health data analysis and predictive modeling.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Health Data Science</h3>
-                        <p>Master the art of extracting insights from complex healthcare datasets.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Population Health</h3>
-                        <p>Apply AI solutions to improve health outcomes at the population level.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Ethics & Privacy</h3>
-                        <p>Understand the ethical implications and privacy considerations in health AI.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Highlights -->
-        <section class="stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">14</div>
-                        <div class="stat-label">Weeks</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">28</div>
-                        <div class="stat-label">Lectures</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100+</div>
-                        <div class="stat-label">Students</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-     <!-- Projects Section -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Cholera Genomics Data Analysis Working Group</h1>
+        <p class="hero-subtitle">Collaborating across Africa to enhance genomic surveillance of Vibrio cholerae</p>
+        <p class="hero-description">A continent-wide initiative to co-develop pipelines, share expertise, and strengthen public health response through genomic insights.</p>
+        <div class="hero-buttons">
+          <a href="#objectives" class="btn btn-primary">Explore Objectives</a>
+          <a href="./team.html" class="btn btn-secondary">Meet the Team</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-graphic">
+          <i class="fas fa-dna"></i>
+          <i class="fas fa-network-wired"></i>
+          <i class="fas fa-vials"></i>
+          <i class="fas fa-globe-africa"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section id="objectives" class="features">
+      <div class="container">
+        <h2 class="section-title">Our Core Objectives</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Platform Compilation</h3>
+            <p>Review and integrate bioinformatics tools used for cholera genomics.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Identify Gaps</h3>
+            <p>Highlight barriers to using genomic platforms in African settings.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-project-diagram"></i>
+            <h3>Decision Support</h3>
+            <p>Develop a guide to help users select appropriate genomic tools.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-book-reader"></i>
+            <h3>User-Friendly Guides</h3>
+            <p>Create accessible SOPs and walkthroughs for using genomic pipelines.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-brain"></i>
+            <h3>Innovative Platform</h3>
+            <p>Reimagine and propose a next-gen cholera genomics analysis platform.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-handshake"></i>
+            <h3>Collaborative Network</h3>
+            <p>Build a network of African scientists to share knowledge and resources.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
     <section class="projects-showcase">
-        <div class="container">
-            <h2 class="section-title">Research Areas in AI for Public Health</h2>
-            <p class="section-subtitle">Explore impactful domains where AI is transforming population health</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Disease Surveillance & Early Warning</h3>
-                    <p>AI models that detect and forecast outbreaks (e.g., dengue, COVID-19) from health, mobility, or social media data.</p>
-                    <div class="project-tags">
-                        <span class="tag">Epidemiology</span>
-                        <span class="tag">Time Series</span>
-                        <span class="tag">Outbreak Detection</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Epidemiological Modeling</h3>
-                    <p>Predict disease spread and burden using AI-powered simulations and population-level health data.</p>
-                    <div class="project-tags">
-                        <span class="tag">Simulation</span>
-                        <span class="tag">Predictive Modeling</span>
-                        <span class="tag">Public Health</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Chronic Disease Risk Prediction</h3>
-                    <p>Forecast individual risk for diabetes, cardiovascular diseases, or cancer using lifestyle and EHR data.</p>
-                    <div class="project-tags">
-                        <span class="tag">EHR</span>
-                        <span class="tag">Risk Scoring</span>
-                        <span class="tag">ML/DL Models</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Digital Behavior & Mental Health</h3>
-                    <p>Use AI to analyze social media and wearable data to track mental health, vaccine hesitancy, or smoking behavior.</p>
-                    <div class="project-tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">Social Media</span>
-                        <span class="tag">Mental Health</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-file-medical"></i>
-                    </div>
-                    <h3>NLP for Health Records</h3>
-                    <p>Extract insights from clinical notes, reports, or literature using natural language processing (NLP).</p>
-                    <div class="project-tags">
-                        <span class="tag">NLP</span>
-                        <span class="tag">Clinical Text</span>
-                        <span class="tag">Information Extraction</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-baby"></i>
-                    </div>
-                    <h3>Maternal & Child Health AI</h3>
-                    <p>Use AI tools to predict pregnancy risks and improve neonatal outcomes through mobile and community health data.</p>
-                    <div class="project-tags">
-                        <span class="tag">mHealth</span>
-                        <span class="tag">Pregnancy</span>
-                        <span class="tag">Neonatal Care</span>
-                    </div>
-                </div>
-                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-x-ray"></i>
-                    </div>
-                    <h3>AI for TB & Disease Detection</h3>
-                    <p>Leverage AI on chest X-rays and clinical data to enhance tuberculosis and disease screening in low-resource settings.</p>
-                    <div class="project-tags">
-                        <span class="tag">Medical Image Analysis</span>
-                        <span class="tag">CAD4TB</span>
-                        <span class="tag">Screening</span>
-                    </div>
-                </div>
-                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3>Geospatial AI & Health Equity</h3>
-                    <p>Map disease burdens, healthcare access, and inequity using satellite imagery, census, and health data.</p>
-                    <div class="project-tags">
-                        <span class="tag">GIS</span>
-                        <span class="tag">Inequality</span>
-                        <span class="tag">Remote Sensing</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI Decision Support for Policy</h3>
-                    <p>Develop AI tools that support public health interventions and decision-making for planners and policymakers.</p>
-                    <div class="project-tags">
-                        <span class="tag">Dashboards</span>
-                        <span class="tag">Policy</span>
-                        <span class="tag">Data-Driven Decisions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-cta">
-                <a href="projects.html" class="btn btn-primary">View All Areas</a>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Cholera Genomics Workflow</h2>
+        <p class="section-subtitle">Steps for Vibrio cholerae Genomic Analysis</p>
+        <div class="projects-grid">
+          <div class="project-card"><h3>De novo Assembly</h3></div>
+          <div class="project-card"><h3>Genome Annotation</h3></div>
+          <div class="project-card"><h3>AMR Gene Profiling</h3></div>
+          <div class="project-card"><h3>MLST Classification</h3></div>
+          <div class="project-card"><h3>Phylogenetic Tree</h3></div>
+          <div class="project-card"><h3>Virulence Gene Detection</h3></div>
+          <div class="project-card"><h3>Lineage Assignment</h3></div>
+          <div class="project-card"><h3>Comparative Genomics</h3></div>
+            <div class="project-card"><h3>Data Visualization</h3></div>
         </div>
+      </div>
     </section>
+<!-- Latest News Section -->
+<section id="news" class="news" style="padding: 60px 0; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 1200px; margin: auto;">
+    
+    <!-- Section Header -->
+    <div class="view-header">
+      <h2 style="text-align: left; padding: 40px 0 20px; font-weight: 400; font-size: 2.5rem; color: #222;">
+        Latest News
+      </h2>
+    </div>
 
-     <!-- Testimonial Section -->
-    <section id="testimonial">
-        <h2>What Our Participants Say</h2>
-        <div class="testimonial-container">
-            <div class="testimonial-card">
-                <img src="img/testimonials/sample-avatar.png" alt="Reviewer Photo" class="testimonial-photo">
-                <p class="testimonial-text">"Comment goes here..."</p>
-                <h4 class="testimonial-name">Name</h4>
-                <small class="testimonial-role">Affiliation</small>
-            </div>
-            <div class="testimonial-card">
-                <img src="img/testimonials/sample-avatar.png" alt="Reviewer Photo" class="testimonial-photo">
-                <p class="testimonial-text">"Comment goes here..."</p>
-                <h4 class="testimonial-name">Name</h4>
-                <small class="testimonial-role">Affiliation</small>
-            </div>
-             <div class="testimonial-card">
-                <img src="img/testimonials/sample-avatar.png" alt="Reviewer Photo" class="testimonial-photo">
-                <p class="testimonial-text">"Comment goes here..."</p>
-                <h4 class="testimonial-name">Name</h4>
-                <small class="testimonial-role">Affiliation</small>
-            </div>
-             <div class="testimonial-card">
-                <img src="img/testimonials/sample-avatar.png" alt="Reviewer Photo" class="testimonial-photo">
-                <p class="testimonial-text">"Comment goes here..."</p>
-                <h4 class="testimonial-name">Name</h4>
-                <small class="testimonial-role">Affiliation</small>
-            </div>
-             <div class="testimonial-card">
-                <img src="img/testimonials/sample-avatar.png" alt="Reviewer Photo" class="testimonial-photo">
-                <p class="testimonial-text">"Comment goes here..."</p>
-                <h4 class="testimonial-name">Name</h4>
-                <small class="testimonial-role">Affiliation</small>
-            </div>
-             <div class="testimonial-card">
-                <img src="img/testimonials/sample-avatar.png" alt="Reviewer Photo" class="testimonial-photo">
-                <p class="testimonial-text">"Comment goes here..."</p>
-                <h4 class="testimonial-name">Name</h4>
-                <small class="testimonial-role">Affiliation</small>
-            </div>
-    </section>
-    </main>
+    <!-- News Items -->
+    <div class="view-content row">
+      <div>
+        <ul style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; list-style: none; padding: 0; margin-bottom: 30px;">
+          
+          <!-- News Card -->
+          <li style="flex: 1 1 calc(33% - 30px); min-width: 300px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+            <div class="views-field views-field-nothing">
+              <span class="field-content" style="display: block;">
+                
+                <!-- Title -->
+                <h4 style="color: #000; font-weight: 700; font-size: 1.25rem; margin-bottom: 10px;">
+                  Building the African Bioinformatics Institute: Key…
+                </h4>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>AI for Public Health</h4>
-                    <p>Advancing healthcare through artificial intelligence education and research.</p>
+                <!-- Separator -->
+                <hr style="border: none; border-top: 3px solid #764ba2; margin: 10px 0;">
+
+                <!-- Description -->
+                <div style="min-height: 120px; font-size: 0.95rem; color: #333; line-height: 1.6;">
+                  The African Bioinformatics Institute (ABI) continues to take shape through a series of structured stakeholder engagements. At the most recent information session, held on 10 July 2025, participants received key updates on the proposed structure, training, infrastructure, and plans for collaborative…
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="overview.html">Course Overview</a></li>
-                        <li><a href="schedule.html">Schedule</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Course Inquiries</h4>
-                    <p>Email: microcredentials@daffodilvarsity.edu.bd</p>
-                    <p>Phone: +8801847334980 (WhatsApp)</p>
-                </div>
+
+                <!-- Date -->
+                <small style="display: block; margin-top: 10px; color: #777;">
+                  <i class="fa-solid fa-calendar" style="margin-right: 6px;"></i> Thu, Jul 10 2025
+                </small>
+
+                <!-- Separator -->
+                <hr style="border: none; border-top: 3px solid #764ba2; margin: 15px 0;">
+
+                <!-- Read More Button -->
+                <a href="/news/19/Building-the-African-Bioinformatics-Institute-Key-Updates" 
+                   style="display: inline-block; padding: 10px 20px; font-size: 1rem; font-weight: 500; background-color: #764ba2; color: #fff; border: none; border-radius: 5px; text-decoration: none;">
+                  Read more
+                </a>
+              </span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Md. Jubayer Hossain. All rights reserved.</p>
-            </div>
+          </li>
+          <!-- End News Card -->
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Cholera Genomics Group</h4>
+          <p>Powered by African scientists working to revolutionize Vibrio cholerae surveillance and response.</p>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#">Workflows</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:choleragenomicsdataanalysis@gmail.com">choleragenomicsdataanalysis@gmail.com</a></p>
+          <p>Affiliation: Sanger Institute (UK) </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cholera Genomics Working Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
