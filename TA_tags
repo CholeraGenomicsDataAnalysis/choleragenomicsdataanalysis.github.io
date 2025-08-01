@@ -1,0 +1,20 @@
+ <!-- TA 1 -->
+                     <div class="team-member">
+                            <div class="member-photo">
+                                <img src="img/team/tamim.jpg" alt="Name">
+                            </div>
+                            <h3>Tamim Hasan Saad</h3>
+                            <p style="color: #2563eb; font-weight: 600; margin-bottom: 1rem;">Teaching Assistant</p>                            
+                            <div style="margin-bottom: 1rem;">
+                                <h4 style="color: #1e293b; margin-bottom: 0.5rem;">Expertise:</h4>
+                                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                                    <span style="background: #dbeafe; color: #1e40af; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Machine Learning</span>
+                                    <span style="background: #fef3c7; color: #7e920e; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Data Science</span>
+                                    <span style="background: #f19292; color: #0e922b; padding: 0.25rem 0.75rem; border-radius: 15px; font-size: 0.8rem;">Public Health</span>
+                                </div>
+                            <div style="display: flex; gap: 1rem; justify-content: center;">
+                                <a href="mailto:tamimsaad1812@gmail.com" style="color: #2563eb; font-size: 1.2rem;"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.linkedin.com/in/tamim-hasan-saad/" style="color: #2563eb; font-size: 1.2rem;"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.github.com/Tamim-saad" style="color: #2563eb; font-size: 1.2rem;"><i class="fas fa-globe"></i></a>
+                            </div>
+                        </div>
