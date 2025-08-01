@@ -1,66 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="AI for Public Health Course">
-    <meta property="og:description" content="Transforming healthcare through artificial intelligence and data science. Join our comprehensive course to learn how AI technologies are revolutionizing public health research, policy, and practice.">
-    <meta property="og:image" content="img/social-preview.svg">
-    <meta property="og:url" content="https://hossainlab.github.io/ai4ph/">
-    <meta property="og:type" content="website">
-    <title>Course Overview - AI for Public Health</title>
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Load shared head.html content -->
+  <script>
+    fetch('head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.head.innerHTML += data;
+      })
+      .catch(error => console.error('Error loading head:', error));
+  </script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <i class="fas fa-brain"></i>
-                <span>AI for Public Health</span>
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="overview.html" class="nav-link active">Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a href="schedule.html" class="nav-link">Schedule</a>
-                </li>
-                <li class="nav-item">
-                    <a href="team.html" class="nav-link">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="hosting.html" class="nav-link">Host an Event</a>
-                </li>
-                <li class="nav-item">
-                    <a href="sponsors.html" class="nav-link">Sponsors</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3R9ZCDFxcp9VaFRUOciaWbdZJumA2qxfuwlnta8PzBiPyVQ/viewform?usp=dialog" class="nav-link">Enroll Now</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+   <!-- Placeholder where header.html will be inserted -->
+  <div id="navbar-placeholder"></div>
 
-    <header class="page-header">
-        <div class="container">
-            <h1 class="page-title">Course Overview</h1>
-            <p class="page-subtitle">Comprehensive curriculum designed to bridge AI technology and public health practice</p>
-        </div>
-    </header>
+  <!-- JavaScript should go AFTER the placeholder so it can find it -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
 
     <main>
         <section class="content-section">

@@ -48,6 +48,32 @@ body {
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-logo-img {
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  body.dark-mode .nav-container {
+    background-color: #1f1f1f;
+  }
+
+  body.dark-mode .nav-link {
+    color: #ffffff;
+  }
 
 .nav-logo:hover {
     opacity: 0.8;

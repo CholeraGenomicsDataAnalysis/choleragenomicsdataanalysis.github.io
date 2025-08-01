@@ -1,3 +1,8 @@
+
+// Toggle for dark mode
+
+
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');

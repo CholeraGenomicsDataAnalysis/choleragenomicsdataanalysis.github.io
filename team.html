@@ -15,45 +15,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <i class="fas fa-brain"></i>
-                <span>AI for Public Health</span>
-            </a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="overview.html" class="nav-link">Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a href="schedule.html" class="nav-link">Schedule</a>
-                </li>
-                <li class="nav-item">
-                    <a href="team.html" class="nav-link active">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a href="faq.html" class="nav-link">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a href="hosting.html" class="nav-link">Host an Event</a>
-                </li>
-                <li class="nav-item">
-                    <a href="sponsors.html" class="nav-link">Sponsors</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3R9ZCDFxcp9VaFRUOciaWbdZJumA2qxfuwlnta8PzBiPyVQ/viewform?usp=dialog" class="nav-link">Enroll Now</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Placeholder where header.html will be inserted -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- JavaScript should go AFTER the placeholder so it can find it -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
 
     <header class="page-header">
         <div class="container">
