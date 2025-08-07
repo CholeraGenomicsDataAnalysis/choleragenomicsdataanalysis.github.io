@@ -622,6 +622,106 @@ body.dark-mode {
     margin-right: 15px;
 }
 
+
+/* --- Contact Page Styles --- */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Two columns */
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.contact-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.contact-details i {
+    color: #2563eb; /* Matches your primary color */
+    font-size: 1.25rem;
+    width: 35px;
+}
+
+.contact-details a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px; /* Matches your .btn border-radius */
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Custom Button Style for Form */
+.btn-primary-form {
+    display: block;
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #2563eb;
+    background: #2563eb; /* Primary color background */
+    color: #fff; /* White text */
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary-form:hover {
+    background: #1d4ed8; /* Darker shade for hover */
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments for the contact grid */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    }
+}
+
 /* Footer */
 .footer {
     background: #0f172a;

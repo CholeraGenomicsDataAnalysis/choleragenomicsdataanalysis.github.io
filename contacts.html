@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI for Public Health</title>
+    
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo.jpg">
+    <link rel="stylesheet" href="styles.css"> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+    </script>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">We're here to help. Reach out with questions or collaboration ideas! 💡</p>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 1rem;">Contact Details</h2>
+                    <p style="color: #64748b; margin-bottom: 2rem;">Fill out the form, and our team will get back to you shortly. For direct inquiries, please use the information below.</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:choleragenomicsdataanalysis@gmail.com">choleragenomicsdataanalysis@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Wellcome Sanger Institute, UK</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-wrapper content-card"> <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-form">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Cholera Genomics Group</h4>
+                    <p>Powered by African scientists working to revolutionize Vibrio cholerae surveillance and response.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#objectives">Objectives</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#">Workflows</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:choleragenomicsdataanalysis@gmail.com">choleragenomicsdataanalysis@gmail.com</a></p>
+                    <p>Affiliation: Sanger Institute (UK) </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cholera Genomics Working Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

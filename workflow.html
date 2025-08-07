@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="AI for Public Health Course">
+    <meta property="og:description" content="Transforming healthcare through artificial intelligence and data science. Join our comprehensive course to learn how AI technologies are revolutionizing public health research, policy, and practice.">
+    <meta property="og:image" content="img/social-preview.svg">
+    <meta property="og:url" content="https://hossainlab.github.io/ai4ph/">
+    <meta property="og:type" content="website">
+    <title>Our Team - AI for Public Health</title>
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Placeholder where header.html will be inserted -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- JavaScript should go AFTER the placeholder so it can find it -->
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Meet Our Team</h1>
+            <p class="page-subtitle">Expert leaders and researchers leading the future of public health in Cholera Genomics </p>
+        </div>
+    </header>
+
+   <main>
+    
+   </main>
+
+    <!-- Footer -->
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Cholera Genomics Group</h4>
+          <p>Powered by African scientists working to revolutionize Vibrio cholerae surveillance and response.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#">Workflows</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: <a href="mailto:choleragenomicsdataanalysis@gmail.com">choleragenomicsdataanalysis@gmail.com</a></p>
+          <p>Affiliation: Sanger Institute (UK) </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cholera Genomics Working Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
